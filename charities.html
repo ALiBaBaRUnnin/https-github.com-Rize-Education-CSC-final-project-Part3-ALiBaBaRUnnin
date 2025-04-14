@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Charities - HelpHub</title>
+    <link rel="stylesheet" href="style.css"> <!-- ✅ CSS Link added -->
+</head>
+<body>
+    <header>
+        <h1><img src="images/logo.png" alt="HelpHub Logo" width="150"></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-filters">
+            <h2>Find Charities Near You</h2>
+            <form>
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                    <option value="any">Anywhere</option>
+                    <option value="downtown">Downtown</option>
+                    <option value="westside">Westside</option>
+                    <option value="eastend">East End</option>
+                </select>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="all">All Categories</option>
+                    <option value="animals">Animals</option>
+                    <option value="food">Food/Hunger</option>
+                    <option value="youth">Youth</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="charity-list">
+            <article class="charity">
+                <img src="images/animal-rescue.jpg" alt="Animal Rescue Center" width="150">
+                <div class="charity-info">
+                    <h3>Animal Rescue Center</h3>
+                    <p>Location: Downtown</p>
+                    <p>Helping animals in need since 2015. Volunteers needed for dog walking, adoption events, and fundraising.</p>
+                    <a class="button" href="charity_profile.html">View Profile</a>
+                </div>
+            </article>
+
+            <article class="charity">
+                <img src="images/food-bank.jpg" alt="Community Food Bank" width="150">
+                <div class="charity-info">
+                    <h3>Community Food Bank</h3>
+                    <p>Location: Westside</p>
+                    <p>Providing meals to families in need. Weekly volunteer shifts available for food sorting and distribution.</p>
+                    <a class="button" href="charity_profile.html">View Profile</a>
+                </div>
+            </article>
+
+            <article class="charity">
+                <img src="images/youth-center.jpg" alt="Youth Mentoring Program" width="150">
+                <div class="charity-info">
+                    <h3>Youth Mentoring Program</h3>
+                    <p>Location: East End</p>
+                    <p>Empowering young minds through education and mentorship. Volunteers needed for tutoring and after-school programs.</p>
+                    <a class="button" href="charity_profile.html">View Profile</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HelpHub</p>
+        <nav>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+    </footer>
+</body>
+</html>
